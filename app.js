@@ -8,7 +8,7 @@ var bodyparser           =require("body-parser");
 var LocalStrategy        =require("passport-local");
 
 var passportLocalMongoose=require("passport-local-mongoose");
-mongoose.connect("");
+mongoose.connect(DATABASE_URL);
 
 var port = process.env.PORT || 8080;
 var app=express();
